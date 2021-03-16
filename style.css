@@ -1,0 +1,183 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #ffb366, 	#ffd966);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.glass{
+    display: flex;
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 1rem;
+    z-index: 3;
+    backdrop-filter: blur(2rem);
+}
+
+.circle1, .circle2{
+    position: absolute;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle1{
+top: 5%;
+right: 15%;
+
+}
+
+.circle2{
+    bottom: 5%;
+    left: 10%;
+
+}
+
+.dashboard{
+    background: rgba(255,255,255,0.3);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(250, 150, 104);
+    border-radius: 1rem;
+    padding: 1rem;
+    
+}
+
+.user{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user img{
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+
+.links{
+    list-style: none;
+}
+
+.links li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+.links li i {
+   
+    font-size: 30px;
+    margin-right: 2rem;
+}
+
+.pro{
+    margin-top: 2rem;
+    background: linear-gradient(to left bottom,rgba(250, 150, 104,0.7),rgba(250, 150, 104,0.1));
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+}
+.pro h2{
+    width: 65%;
+}
+.pro i {
+    font-size: 50px;
+    text-align: center;
+}
+
+.games{
+    flex:2;
+    padding: 2rem;
+}
+
+
+.status h1{
+    color: #ffb366;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.status input{
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 1rem;
+    height: 1.5rem;
+    background: linear-gradient(to left bottom,rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.7));
+}
+
+
+
+.card{
+    color:rgb(250, 150, 104);
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom left, rgba(255,255,255,0.5),rgba(255,255,255,0.2));
+    min-height: 7rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    align-content: center;
+    padding: 1rem;
+    box-shadow: 10px 5px 20px 0 rgba(224, 198, 160, 0.3);
+
+}
+
+
+
+
+
+/* animations */
+
+.links li:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    
+}
+
+.links li:hover .fa-twitch{
+    color: rgb(145, 25, 201);
+    transition: color 0.2s ease-in-out;
+
+}
+.links li:hover .fa-steam{
+    color: rgb(25, 131, 201);
+    transition: color 0.2s ease-in-out;
+
+}
+.links li:hover .fa-gamepad{
+    color: rgb(23, 177, 156);
+    transition: color 0.2s ease-in-out;
+
+}
+.links li:hover .fa-book{
+    color: rgb(201, 25, 78);
+    transition: color 0.2s ease-in-out;
+
+}
