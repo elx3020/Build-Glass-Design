@@ -41,7 +41,7 @@ right: 15%;
 
 .circle2{
     bottom: 5%;
-    left: 10%;
+    left: 15%;
 
 }
 
@@ -118,7 +118,7 @@ right: 15%;
 
 
 .status h1{
-    color: #ffb366;
+    color:rgb(250, 150, 104);
     font-size: 2rem;
     font-weight: bolder;
 }
